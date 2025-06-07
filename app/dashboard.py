@@ -13,8 +13,8 @@ En este panel interactivo podrás explorar cómo han evolucionado los incendios 
 
 Porque proteger los bosques es proteger nuestro futuro. 🌍💚
 """)
-path_html = ruta_actual+"\\images\\html\\"
-path_png=  ruta_actual+"\\images\\png\\"
+path_html = ruta_actual+"//images//html//"
+path_png=  ruta_actual+"//images//png//"
 
 tabs = st.tabs(["¿Qué es un incendios forestal?", "¿Dónde y cuándo?", "El suelo", "La gente", "El clima", "Otros factores"])
 
