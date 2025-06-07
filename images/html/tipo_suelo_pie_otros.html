@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-6785a66829171f2457bb3e56c5ce1958"}, "mark": {"type": "arc", "innerRadius": 50}, "encoding": {"color": {"field": "grupo_suelo", "scale": {"domain": ["\u00c1reas urbanas", "Tierras de cultivo", "Bosques frondosos", "Bosques de con\u00edferas", "Bosques mixtos", "Vegetaci\u00f3n natural", "Zonas desprovistas", "Humedales", "Medios acu\u00e1ticos interiores", "Zonas costeras marinas", "Otros"], "range": ["#e78ac3", "#ffd92f", "#1b7837", "#5ab4ac", "#a6dba0", "#4daf4a", "#999999", "#80b1d3", "#0571b0", "#92c5de", "#cccccc"]}, "title": "Grupo de Suelo", "type": "nominal"}, "opacity": {"condition": {"param": "param_23", "value": 1}, "value": 0.4}, "theta": {"field": "num_incendios", "title": "", "type": "quantitative"}, "tooltip": [{"field": "grupo_suelo", "title": "Grupo de Suelo", "type": "nominal"}, {"field": "num_incendios", "title": "N\u00ba de Incendios", "type": "quantitative"}, {"field": "porcentaje", "format": ".2f", "title": "% del Total", "type": "quantitative"}]}, "height": 400, "params": [{"name": "param_23", "select": {"type": "point", "clear": "mouseout", "fields": ["grupo_suelo"], "on": "mouseover"}}], "title": "Distribuci\u00f3n de Incendios por Grupo de Suelo (con categor\u00eda 'Otros')", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-6785a66829171f2457bb3e56c5ce1958": [{"grupo_suelo": "\u00c1reas urbanas", "num_incendios": 206230, "porcentaje": 35.22896349327553}, {"grupo_suelo": "Tierras de cultivo", "num_incendios": 190437, "porcentaje": 32.53114542389037}, {"grupo_suelo": "Bosques mixtos", "num_incendios": 17462, "porcentaje": 2.982922758665457}, {"grupo_suelo": "Vegetaci\u00f3n natural", "num_incendios": 11703, "porcentaje": 1.999149298170991}, {"grupo_suelo": "Bosques frondosos", "num_incendios": 4953, "porcentaje": 0.8460895901769563}, {"grupo_suelo": "Bosques de con\u00edferas", "num_incendios": 413, "porcentaje": 0.07055017176319058}, {"grupo_suelo": "Zonas desprovistas", "num_incendios": 363, "porcentaje": 0.062008988741012544}, {"grupo_suelo": "Medios acu\u00e1ticos interiores", "num_incendios": 25, "porcentaje": 0.004270591511089018}, {"grupo_suelo": "Otros", "num_incendios": 153813, "porcentaje": 26.2748996838054}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

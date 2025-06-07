@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-44a726730e41f5165d809abf544d357d"}, "mark": {"type": "circle", "size": 60}, "encoding": {"color": {"value": "green"}, "tooltip": [{"field": "anio", "type": "quantitative"}, {"field": "total_incendios", "type": "quantitative"}, {"field": "total_emisiones", "type": "quantitative"}], "x": {"field": "total_incendios", "title": "Total Incendios Anuales", "type": "quantitative"}, "y": {"field": "total_emisiones", "title": "Total Emisiones Anuales", "type": "quantitative"}}, "height": 400, "title": "Relaci\u00f3n entre Incendios Anuales y Emisiones Anuales", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-44a726730e41f5165d809abf544d357d": [{"anio": 1968, "total_incendios": 2038, "total_emisiones": 167452.3432}, {"anio": 1969, "total_incendios": 1442, "total_emisiones": 169906.6053}, {"anio": 1970, "total_incendios": 3155, "total_emisiones": 190446.09}, {"anio": 1971, "total_incendios": 1665, "total_emisiones": 204057.7987}, {"anio": 1972, "total_incendios": 2093, "total_emisiones": 220875.16059999997}, {"anio": 1973, "total_incendios": 3724, "total_emisiones": 235205.61539999998}, {"anio": 1974, "total_incendios": 3920, "total_emisiones": 252024.5259}, {"anio": 1975, "total_incendios": 4128, "total_emisiones": 261017.84339999998}, {"anio": 1976, "total_incendios": 4356, "total_emisiones": 280200.6189}, {"anio": 1977, "total_incendios": 2064, "total_emisiones": 276855.0238}, {"anio": 1978, "total_incendios": 8193, "total_emisiones": 282920.97329999995}, {"anio": 1979, "total_incendios": 6189, "total_emisiones": 286325.2431}, {"anio": 1980, "total_incendios": 7075, "total_emisiones": 297428.9532}, {"anio": 1981, "total_incendios": 10688, "total_emisiones": 289006.308}, {"anio": 1982, "total_incendios": 6308, "total_emisiones": 296511.4394}, {"anio": 1983, "total_incendios": 4736, "total_emisiones": 289158.7903}, {"anio": 1984, "total_incendios": 7073, "total_emisiones": 286832.7681}, {"anio": 1985, "total_incendios": 12235, "total_emisiones": 289808.6774}, {"anio": 1986, "total_incendios": 7514, "total_emisiones": 282059.33119999996}, {"anio": 1987, "total_incendios": 8816, "total_emisiones": 280655.27729999996}, {"anio": 1988, "total_incendios": 9440, "total_emisiones": 296873.38659999997}, {"anio": 1989, "total_incendios": 20250, "total_emisiones": 322508.49079999997}, {"anio": 1990, "total_incendios": 12914, "total_emisiones": 600611.2996}, {"anio": 1991, "total_incendios": 13529, "total_emisiones": 620901.1021}, {"anio": 1992, "total_incendios": 15956, "total_emisiones": 634476.9616}, {"anio": 1993, "total_incendios": 14253, "total_emisiones": 600358.1118000001}, {"anio": 1994, "total_incendios": 19249, "total_emisiones": 633090.5065}, {"anio": 1995, "total_incendios": 25557, "total_emisiones": 650448.8695}, {"anio": 1996, "total_incendios": 16586, "total_emisiones": 640709.0792}, {"anio": 1997, "total_incendios": 22320, "total_emisiones": 692937.2678}, {"anio": 1998, "total_incendios": 22003, "total_emisiones": 719163.8463}, {"anio": 1999, "total_incendios": 17943, "total_emisiones": 769186.3243000001}, {"anio": 2000, "total_incendios": 23574, "total_emisiones": 805439.7762}, {"anio": 2001, "total_incendios": 19099, "total_emisiones": 859420.4142}, {"anio": 2002, "total_incendios": 19929, "total_emisiones": 903253.0771}, {"anio": 2003, "total_incendios": 18616, "total_emisiones": 931853.6673}, {"anio": 2004, "total_incendios": 21396, "total_emisiones": 971833.1226}, {"anio": 2005, "total_incendios": 25492, "total_emisiones": 981662.9762}, {"anio": 2006, "total_incendios": 16334, "total_emisiones": 970445.706}, {"anio": 2007, "total_incendios": 10936, "total_emisiones": 1002138.5421}, {"anio": 2008, "total_incendios": 11655, "total_emisiones": 933634.2023}, {"anio": 2009, "total_incendios": 15643, "total_emisiones": 846720.764}, {"anio": 2010, "total_incendios": 11721, "total_emisiones": 811369.5704}, {"anio": 2011, "total_incendios": 16414, "total_emisiones": 833371.5081}, {"anio": 2012, "total_incendios": 15997, "total_emisiones": 823323.4082}, {"anio": 2013, "total_incendios": 10797, "total_emisiones": 760296.9663}, {"anio": 2014, "total_incendios": 9806, "total_emisiones": 756526.7216}, {"anio": 2015, "total_incendios": 11810, "total_emisiones": 774729.133}, {"anio": 2016, "total_incendios": 8768, "total_emisiones": 747708.918}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

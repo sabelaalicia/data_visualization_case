@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-701e195a73c93dfc586afaa16a4c6393"}, "mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "categoria", "scale": {"domain": ["rural", "semiurbana", "urbana"], "range": ["#da3191", "#ffdb35", "#34adae"]}, "title": "Categor\u00eda Provincia", "type": "nominal"}, "x": {"field": "anio", "title": "A\u00f1o", "type": "ordinal"}, "y": {"field": "cantidad_incendios", "title": "Cantidad de incendios", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_2", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Evoluci\u00f3n anual de incendios seg\u00fan categor\u00eda de provincia", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-701e195a73c93dfc586afaa16a4c6393": [{"anio": 1996, "categoria": "rural", "cantidad_incendios": 5553}, {"anio": 1996, "categoria": "semiurbana", "cantidad_incendios": 3895}, {"anio": 1996, "categoria": "urbana", "cantidad_incendios": 7004}, {"anio": 1998, "categoria": "rural", "cantidad_incendios": 6504}, {"anio": 1998, "categoria": "semiurbana", "cantidad_incendios": 5231}, {"anio": 1998, "categoria": "urbana", "cantidad_incendios": 10035}, {"anio": 1999, "categoria": "rural", "cantidad_incendios": 5363}, {"anio": 1999, "categoria": "semiurbana", "cantidad_incendios": 4388}, {"anio": 1999, "categoria": "urbana", "cantidad_incendios": 7948}, {"anio": 2000, "categoria": "rural", "cantidad_incendios": 7760}, {"anio": 2000, "categoria": "semiurbana", "cantidad_incendios": 5930}, {"anio": 2000, "categoria": "urbana", "cantidad_incendios": 9654}, {"anio": 2001, "categoria": "rural", "cantidad_incendios": 6410}, {"anio": 2001, "categoria": "semiurbana", "cantidad_incendios": 3695}, {"anio": 2001, "categoria": "urbana", "cantidad_incendios": 8798}, {"anio": 2002, "categoria": "rural", "cantidad_incendios": 6885}, {"anio": 2002, "categoria": "semiurbana", "cantidad_incendios": 3654}, {"anio": 2002, "categoria": "urbana", "cantidad_incendios": 9219}, {"anio": 2003, "categoria": "rural", "cantidad_incendios": 6050}, {"anio": 2003, "categoria": "semiurbana", "cantidad_incendios": 3941}, {"anio": 2003, "categoria": "urbana", "cantidad_incendios": 8461}, {"anio": 2004, "categoria": "rural", "cantidad_incendios": 6572}, {"anio": 2004, "categoria": "semiurbana", "cantidad_incendios": 4243}, {"anio": 2004, "categoria": "urbana", "cantidad_incendios": 10355}, {"anio": 2005, "categoria": "rural", "cantidad_incendios": 8489}, {"anio": 2005, "categoria": "semiurbana", "cantidad_incendios": 5171}, {"anio": 2005, "categoria": "urbana", "cantidad_incendios": 11563}, {"anio": 2006, "categoria": "rural", "cantidad_incendios": 4254}, {"anio": 2006, "categoria": "semiurbana", "cantidad_incendios": 3543}, {"anio": 2006, "categoria": "urbana", "cantidad_incendios": 8320}, {"anio": 2007, "categoria": "rural", "cantidad_incendios": 3559}, {"anio": 2007, "categoria": "semiurbana", "cantidad_incendios": 3091}, {"anio": 2007, "categoria": "urbana", "cantidad_incendios": 4089}, {"anio": 2008, "categoria": "rural", "cantidad_incendios": 3705}, {"anio": 2008, "categoria": "semiurbana", "cantidad_incendios": 3551}, {"anio": 2008, "categoria": "urbana", "cantidad_incendios": 4252}, {"anio": 2009, "categoria": "rural", "cantidad_incendios": 4889}, {"anio": 2009, "categoria": "semiurbana", "cantidad_incendios": 4700}, {"anio": 2009, "categoria": "urbana", "cantidad_incendios": 5826}, {"anio": 2010, "categoria": "rural", "cantidad_incendios": 3180}, {"anio": 2010, "categoria": "semiurbana", "cantidad_incendios": 3060}, {"anio": 2010, "categoria": "urbana", "cantidad_incendios": 5333}, {"anio": 2011, "categoria": "rural", "cantidad_incendios": 5696}, {"anio": 2011, "categoria": "semiurbana", "cantidad_incendios": 4122}, {"anio": 2011, "categoria": "urbana", "cantidad_incendios": 6414}, {"anio": 2012, "categoria": "rural", "cantidad_incendios": 4982}, {"anio": 2012, "categoria": "semiurbana", "cantidad_incendios": 4634}, {"anio": 2012, "categoria": "urbana", "cantidad_incendios": 6213}, {"anio": 2013, "categoria": "rural", "cantidad_incendios": 3040}, {"anio": 2013, "categoria": "semiurbana", "cantidad_incendios": 2963}, {"anio": 2013, "categoria": "urbana", "cantidad_incendios": 4651}, {"anio": 2014, "categoria": "rural", "cantidad_incendios": 2260}, {"anio": 2014, "categoria": "semiurbana", "cantidad_incendios": 3231}, {"anio": 2014, "categoria": "urbana", "cantidad_incendios": 4138}, {"anio": 2015, "categoria": "rural", "cantidad_incendios": 3485}, {"anio": 2015, "categoria": "semiurbana", "cantidad_incendios": 3700}, {"anio": 2015, "categoria": "urbana", "cantidad_incendios": 4464}, {"anio": 2016, "categoria": "rural", "cantidad_incendios": 2472}, {"anio": 2016, "categoria": "semiurbana", "cantidad_incendios": 2522}, {"anio": 2016, "categoria": "urbana", "cantidad_incendios": 3628}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
