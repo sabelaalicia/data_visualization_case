@@ -6,7 +6,7 @@ ruta_actual = ruta_actual.rsplit('//', 1)[0]
 path_html = ruta_actual+"//images//html//"
 path_png=  ruta_actual+"//images//png//"
 st.set_page_config(layout="wide")
-st.title("Incendios forestales en España. Contextualización."+path_png)
+st.title("Incendios forestales en España.."+path_png)
 st.markdown("""
 Los incendios forestales no son solo llamas que arrasan bosques: son una amenaza para la naturaleza, los animales, las personas y el clima.  
 En este panel interactivo podrás explorar cómo han evolucionado los incendios en España, cuántos se han producido, en qué zonas han sido más frecuentes y qué factores pueden influir en su aparición.
